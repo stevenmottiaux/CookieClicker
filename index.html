@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Clicker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+    <section id="container-general">
+        <h1>Cookie <span class="titre-custom">Clicker</span></h1>
+        <article class="bienvenue">
+            <p>Prêt à cliquer ? Cookie n'attend que ça !</p>
+        </article>
+        
+        <section id="display-container">
+            <section id="game-container" class="container">
+                <article class="titre_score">Score:</article>
+                <article id="score" class="score">0</article>
+            </section>
+            <section id="multiplier-container" class="container">
+                <article class="titre_multiplicateur">Multiplicateur:</article>
+                <article id="multiplicateur" class="multiplicateur">x1</article>
+            </section>
+        </section>
+        
+        <section id="cookie-container" class="container">
+            <section id="cookie-display" class="colonne_display">
+                <img src="/pictures/cookie_image.png" alt="photo de cookie" id="cookie" />
+            </section>
+            <section class="commandes">
+                <h2>Le magasin des bonus : </h2>
+                <hr>
+                <button id="bonus1" class="bouton_commande">
+                    Acheter un multiplicateur<br>(Coût: <span id="bonus1CostDisplay">${bonus1Cost}</span>)
+                </button>
+                <hr>
+                <button id="bonus2" class="bouton_commande">
+                    Acheter un auto-clicker<br> (Coût: <span id="bonus2CostDisplay">${bonus2Cost}</span>)
+                </button>
+                <hr>
+                <button id="bonus3" class="bouton_commande">
+                    <element id="bonus-3-title">Bonus 200% <br>(Coût: <span id="bonus3CostDisplay">${bonus3Cost}</span>)</element>
+                    <element id="bonus-3-timer">Timer: <span id="timer"></span> secondes</element>
+                    <element>Bonus: <span id="bonus-3-state"></span></element>
+                </button>
+            </section>
+        </section>
+    </section>
+
+    <script type="module" src="./scripts/index.js"></script>
+</body>
+</html>

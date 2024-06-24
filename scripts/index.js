@@ -113,7 +113,7 @@ function simulateClick(element) {
 }
 
 function startAutoClicker(element, interval) {
-  if (autoClickNumber === 0) {
+  if (autoClickNumber === 1) {
     var clickInterval = setInterval(function () {
       simulateClick(element);
     }, interval);
